@@ -73,4 +73,8 @@ By doing this, two jar files will be created.
 automatically generated.
 
 
+
 And that's all!! It's a given that the histogram will reward your effort...
+
+## License
+All source code published for all the assignments is available under the terms of the MIT License. For more info, [click here](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt).
