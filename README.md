@@ -43,22 +43,23 @@ and in the *Parent Project* find the parent project you created before by using 
 ### *Step 2:* Add the txt file
 You need to download the txt file that has all the grades. This file is [here](https://drive.google.com/file/d/1Yz_WY_uDTqEbGGjo2SpoXjWDU9WDlnTl/view).
 
-Also, put this file in the *target* directory that it will be created later (after step 5).
+Also, put this file in the *target* directory that it will be created later (after Step 5).
 
 ### *Step 3:* Build the java file
 * In the module project, right click in the *src/main/java* --> *New* --> *Package* and complete the name of your preference.
 * In the package that you created, right click and then *New* --> *Class*, complete the *name* section with the name 
 *HistorgramGenerator* and click *Finish*.
+* Some useful tools are provided by progessor **AntonisGkortzis** in his Github profile.
 * In the java file that you just created, you need to import some features for the chart. For more help, please [click here](https://github.com/AntonisGkortzis/BuildAutomationToolsDemoProject/blob/master/histogramgenerator/src/main/java/histogramgenerator/JFreeChartXYLineChartDemo.java).
 * Also, you need to add some functions in order to read the txt file that is given from the command line and to create an array with the frequencies of each grade (0-10).
-* Another useful function is the *generatorChart* that is provided by the professor **AntonisGkortzis** in his Github profile.
-You can take this function by [clicking here](https://github.com/AntonisGkortzis/BuildAutomationToolsDemoProject/blob/master/histogramgenerator/src/main/java/histogramgenerator/JFreeChartXYLineChartDemo.java). 
+* Another useful function is the *generatorChart*. You can take this function by [clicking here](https://github.com/AntonisGkortzis/BuildAutomationToolsDemoProject/blob/master/histogramgenerator/src/main/java/histogramgenerator/JFreeChartXYLineChartDemo.java). 
 * Then, you need to pass this array to the *generatorChart* function that you have just taken.
 
 ### *Step 4:* Add the approriate plugin in the POM of the module project
-* In the module project, you need to add the appropriate dependencies so that the project can run without a problem. 
-* Also, add some build and plugins features. The appropriate code is given [here](https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#Importing_Dependencies) for the dependencies and [here](https://maven.apache.org/guides/mini/guide-configuring-plugins.html) for the plugins. In the section *mainClass* add the path: 
-*name-of-the-package*.*name-of-the-java-class*.
+* In the module project, you need to add some features in order to run your porject without a problem. More specific: 
+1. The appropriate dependencies. The appropriate code is given [here](https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#Importing_Dependencies) 
+2. The appropriate plugins. The appropriate code is given [here](https://maven.apache.org/guides/mini/guide-configuring-plugins.html).
+* In the section *mainClass* add the path: *name-of-the-package*.*name-of-the-java-class*.
 
 ### *Step 5:* Execute the *Maven install*
 As you build the project with *Eclipse* there is no need to add Maven by yourself because it is provided automatically.
@@ -74,4 +75,4 @@ automatically generated.
 
 
 
-And that's all!! It's a given that the histogram will reward your effort...
+#### And that's all!! It's a given that the histogram will reward your effort...
