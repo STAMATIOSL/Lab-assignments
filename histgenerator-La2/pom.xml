@@ -6,7 +6,10 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>gradeshistogram</artifactId>
-  
+
+  <name>histgenerator-Lab2</name>
+  <description>This module maven project generates a histogram with all grades that are given in a txt file from the cmd</description>
+
   <dependencies>
   	<dependency>
   		<groupId>org.jfree</groupId>
