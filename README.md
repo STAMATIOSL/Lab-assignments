@@ -1,6 +1,6 @@
 # Test Maven Project
 
-[![Build Status](https://travis-ci.com/STAMATIOSL/Lab-assignments.svg?token=otdXqsDjaQigqWQQSPs1&branch=main)](https://travis-ci.com/STAMATIOSL/Lab-assignments)
+[![Build Status](https://travis-ci.com/STAMATIOSL/Lab-assignments.svg?token=otdXqsDjaQigqWQQSPs1&branch=development)](https://travis-ci.com/STAMATIOSL/Lab-assignments)
 
 # Lab-assignments
 It has all the lab assignments for the ASE Lab.
