@@ -77,5 +77,9 @@ automatically generated.
 
 #### And that's all!! It's a given that the histogram will reward your effort...
 
+
 ## About the second Lab assignment
 You can find the README.md file for the second Lab assignment by clicking [here](https://github.com/STAMATIOSL/Lab-assignments/tree/development/unit_testing-Lab3/README.md)
+
+
+[![Build Status](https://travis-ci.com/STAMATIOSL/Lab-assignments.svg?token=otdXqsDjaQigqWQQSPs1&branch=development)](https://travis-ci.com/STAMATIOSL/Lab-assignments)
