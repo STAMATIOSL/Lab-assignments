@@ -64,13 +64,12 @@ public class ArithmeticOperationsTest {
     @Test (expected = ArithmeticException.class)
     public void testDivideShouldCauseAnException() {
     	double zero = 0.0;
-    	//Assert.assertEquals("Cannot divide with zero", ao.divide(7.35, zero));
     	ao.divide(7.35, zero);
     }
 	
 	@Test
 	public void test_mutliply1() {
-		Assert.assertEquals(10, ao.multiply(2, 5));
+		Assert.assertEquals(10, ao.multiply(5, 2));
 	}
 	
 	@Test
@@ -105,7 +104,6 @@ public class ArithmeticOperationsTest {
 	public void test_multiply_RuleException1() {
 		th1.expect(IllegalArgumentException.class);
 		th1.expectMessage("x & y should be >= 0");
-		//Assert.assertEquals(th1, "x & y should be >= 0");
 		ao.multiply(-1, 5);
 	}
 	
@@ -116,9 +114,7 @@ public class ArithmeticOperationsTest {
 	public void test_multiply_RuleException2() {
 		th2.expect(IllegalArgumentException.class);
 		th2.expectMessage("x & y should be >= 0");
-		//assertEquals("x & y should be >= 0", th2);
 		ao.multiply(2, -7);
-		//Assert.fail("x & y should be >= 0");
 	}
 	
 	@Rule
@@ -131,25 +127,14 @@ public class ArithmeticOperationsTest {
 		ao.multiply(Integer.MAX_VALUE, 10);
 	}
 	
-//	@Rule
-//	public ExpectedException th4 = ExpectedException.none();
-//	
-//	@Test
-//	public void test_multiply_RuleException4() {
-//		th4.expect(IllegalArgumentException.class);
-//		th4.expectMessage("x & y should be >= 0");
-//		//Assert.assertEquals(th1, "x & y should be >= 0");
-//		ao.multiply(0, Integer.MIN_VALUE);
-//	}
+	@Rule
+	public ExpectedException th4 = ExpectedException.none();
 	
-//	@Rule
-//	public ExpectedException th5 = ExpectedException.none();
-//	
-//	@Test
-//	public void test_multiply4() {
-//		th5.expect(ArithmeticException.class);
-//		th5.expectMessage("/ by zero");
-//		ao.multiply(9, 0);
-//	}
+	@Test
+	public void test_multiply_RuleException4() {
+		th4.expect(IllegalArgumentException.class);
+		th4.expectMessage("The product does not fit in an Integer variable");
+		ao.multiply(9, Integer.MAX_VALUE);
+	}
 	
 }
