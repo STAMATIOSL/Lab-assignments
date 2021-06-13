@@ -1,3 +1,5 @@
+## About the third Lab assignment
+
 1. Build the executable Java application with: 
 	mvn package jacoco:report
 
