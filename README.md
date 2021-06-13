@@ -84,3 +84,6 @@ automatically generated.
 
 ## About the second Lab assignment
 You can find the README.md file for the second Lab assignment by clicking [here](https://github.com/STAMATIOSL/Lab-assignments/tree/development/unit_testing-Lab3/README.md)
+
+## About the third Lab assignment
+You can find the README.md file for the third Lab assignment by clicking [here](https://github.com/STAMATIOSL/Lab-assignments/blob/development/design_patterns-Lab4/README.md)
