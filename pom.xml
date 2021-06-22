@@ -79,6 +79,7 @@
   <modules>
   	<module>histgenerator-Lab2</module>
   	<module>unit_testing-Lab3</module>
+  	<module>design_patterns-Lab4</module>
   </modules>
   
 </project>
